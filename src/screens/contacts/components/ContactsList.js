@@ -54,8 +54,9 @@ class ContactsList extends React.PureComponent {
     goTo = (key) => {
         return () => {
             const { blockRefs } = this.state;
-
-            console.log(blockRefs[key]);
+            blockRefs[key].current.scrollIntoView({
+                behavior: 'smooth',
+            });
         }
     };
 
