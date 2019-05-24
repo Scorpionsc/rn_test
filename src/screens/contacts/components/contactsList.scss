@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 40px;
+    width: 46px;
     bottom: 0;
     top: 0;
     right: 0;
@@ -38,6 +38,7 @@
     height: 30px;
     border: none;
     background: none;
+    color: $color_5;
 
     &.active {
       color: $color_2;
@@ -45,10 +46,10 @@
   }
 
   &__list {
-    padding-right: 50px;
     overflow-y: auto;
     position: absolute;
-    top: 40px;
+    top: 0;
+    padding: 38px 46px 38px 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -56,12 +57,13 @@
   }
 
   &__title {
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 31px;
+    margin-bottom: 22px;
+    padding-left: 33px;
   }
 
   &__listItem {
-    margin-bottom: 50px;
+    margin-bottom: 36px;
   }
 
 }

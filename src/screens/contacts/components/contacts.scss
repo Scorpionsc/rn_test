@@ -1,6 +1,5 @@
 @import "../../../scss/main";
 
-
 .contacts{
   position: absolute;
   top: 0;
@@ -12,15 +11,15 @@
     z-index: 2;
     position: absolute;
     left: 50%;
-    bottom: 40px;
+    bottom: 30px;
     transform: translateX(-50%);
-    width: 164px;
-    height: 50px;
+    width: 183px;
+    height: 55px;
     background: #9025FC;
     background: linear-gradient(135deg, #9025FC 0%, #1308FE 100%);
     color: $color_1;
-    font-size: 14px;
-    border-radius: 50px;
+    font-size: 19px;
+    border-radius: 55px;
     border: none;
 
     &:hover {
