@@ -13,7 +13,8 @@ class ContactsList extends React.PureComponent {
     static getDerivedStateFromProps(nextProps, prevState) {
         return !prevState.update ? {
             ...prevState,
-            selected: ContactsList.getSelectedStates(nextProps.contacts)
+            selected: ContactsList.getSelectedStates(nextProps.contacts),
+            blockRefs: ContactsList.getRefs(nextProps.contacts),
         } : null;
     }
 
@@ -29,19 +30,32 @@ class ContactsList extends React.PureComponent {
         }, []);
     };
 
+   static getRefs = (contacts) => {
+        return Object.keys(contacts).reduce((acum,key) => {
+            acum[key] = React.createRef();
+            return acum;
+        }, {});
+
+    };
+
     constructor(props) {
         super(props);
 
         this.state = {
             selected: {},
             update: false,
+            blockRefs: {}
         };
     }
 
 
+
+
     goTo = (key) => {
         return () => {
-            console.log(key);
+            const { blockRefs } = this.state;
+
+            console.log(blockRefs[key]);
         }
     };
 
@@ -60,12 +74,13 @@ class ContactsList extends React.PureComponent {
 
     renderList = () => {
         const { contacts } = this.props;
-        const { selected } = this.state;
+        const { selected, blockRefs } = this.state;
 
         return (<div className="contactsList__list">
             {
                 Object.keys(contacts).map(key => (<div
                     className="contactsList__listItem"
+                    ref={blockRefs[key]}
                     key={key}>
                     {
                         <div className="contactsList__title">{key}</div>
