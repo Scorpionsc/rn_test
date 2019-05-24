@@ -1,0 +1,52 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Astrid Petersen",
+      "phone": "+ 1 7234 8852 1200",
+      "photo": "https://cdn2.iconfinder.com/data/icons/smileys-1/512/crazy_smiley_face_avatar_emotion_emoticon_smile-512.png"
+    },
+    {
+      "id": 5,
+      "name": "Bemily Mortensen",
+      "phone": "+ 1 9983 2849 2312",
+      "photo": "https://www.pupilo.lv/media/catalog/product/cache/3/image/040ec09b1e35df139433887a97daa66f/4/-/4-aw_avatar_copy.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Clara Andersen",
+      "phone": "+ 1 7234 8852 1200",
+      "photo": "https://cdn2.iconfinder.com/data/icons/smileys-1/512/crazy_smiley_face_avatar_emotion_emoticon_smile-512.png"
+    },
+    {
+      "id": 2,
+      "name": "Anabella Sørensen",
+      "phone": "+ 1 9983 2849 2312",
+      "photo": "https://www.pupilo.lv/media/catalog/product/cache/3/image/040ec09b1e35df139433887a97daa66f/4/-/4-aw_avatar_copy.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Blaurits Sørensen",
+      "phone": "+ 1 7234 8852 1200",
+      "photo": "https://cdn2.iconfinder.com/data/icons/smileys-1/512/crazy_smiley_face_avatar_emotion_emoticon_smile-512.png"
+    },
+    {
+      "id": 4,
+      "name": "Bigga Andersen",
+      "phone": "+ 1 9983 2849 2312",
+      "photo": "https://www.pupilo.lv/media/catalog/product/cache/3/image/040ec09b1e35df139433887a97daa66f/4/-/4-aw_avatar_copy.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Mortensen Sørensen",
+      "phone": "+ 1 7234 8852 1200",
+      "photo": "https://cdn2.iconfinder.com/data/icons/smileys-1/512/crazy_smiley_face_avatar_emotion_emoticon_smile-512.png"
+    },
+    {
+      "id": 7,
+      "name": "Clara Mortensen",
+      "phone": "+ 1 7234 8852 1200",
+      "photo": "https://cdn2.iconfinder.com/data/icons/smileys-1/512/crazy_smiley_face_avatar_emotion_emoticon_smile-512.png"
+    }
+  ]
+}
