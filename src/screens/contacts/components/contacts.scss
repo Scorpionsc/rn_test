@@ -1,0 +1,24 @@
+@import "../../../scss/main";
+
+
+.contacts{
+  &__add {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    width: 164px;
+    height: 50px;
+    background: #9025FC;
+    background: linear-gradient(135deg, #9025FC 0%, #1308FE 100%);
+    color: $color_1;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+
+    &:hover {
+      background: linear-gradient(135deg, #1308FE 0%, #9025FC 100%);
+
+    }
+  }
+}

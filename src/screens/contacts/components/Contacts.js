@@ -24,6 +24,7 @@ class Contacts extends React.PureComponent {
         this.props.fetchContacts();
     };
 
+
     getListProps = () => {
         const {contacts, contactsLoading} = this.props;
         return {
@@ -32,10 +33,16 @@ class Contacts extends React.PureComponent {
         };
     };
 
+    renderAddButton = () => {
+        return (<button className="contacts__add">Создать группу</button>)
+    };
+
+
     render() {
         return (<section className="contacts">
             <ContactsHeader/>
             <ContactsList {...this.getListProps()}/>
+            {this.renderAddButton()}
         </section>);
     }
 }

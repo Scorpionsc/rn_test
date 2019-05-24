@@ -45,10 +45,6 @@ class ContactsList extends React.PureComponent {
         }
     };
 
-    renderAddButton = () => {
-        return (<button className="contactsList__add">Создать группу</button>)
-    };
-
     renderAlphabet = () => {
         const { contacts } = this.props;
 
@@ -112,7 +108,6 @@ class ContactsList extends React.PureComponent {
             {this.renderPreloader()}
             {this.renderAlphabet()}
             {this.renderList()}
-            {this.renderAddButton()}
         </div>);
     }
 }
