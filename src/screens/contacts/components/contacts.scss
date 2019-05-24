@@ -2,7 +2,14 @@
 
 
 .contacts{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
   &__add {
+    z-index: 2;
     position: absolute;
     left: 50%;
     bottom: 40px;

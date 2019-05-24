@@ -3,10 +3,10 @@
 .contactsList {
   position: absolute;
   top: 40px;
-  overflow-y: auto;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 
   &__loader {
     position: absolute;
@@ -29,6 +29,7 @@
     bottom: 0;
     top: 0;
     right: 0;
+    z-index: 2;
   }
 
   &__alphabetItem {
@@ -45,10 +46,18 @@
 
   &__list {
     padding-right: 50px;
+    overflow-y: auto;
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
 
   &__title {
     font-size: 25px;
+    margin-bottom: 10px;
   }
 
   &__listItem {
