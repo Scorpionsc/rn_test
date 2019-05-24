@@ -33,12 +33,16 @@
   }
 
   &__alphabetItem {
-    margin: 10px 0;
+    margin: 0;
     width: 30px;
     height: 30px;
     border: none;
     background: none;
     color: $color_5;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     &.active {
       color: $color_2;
