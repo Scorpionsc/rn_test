@@ -46,7 +46,7 @@ class Contact extends React.PureComponent {
                 {
                     selected
                         ? (<div className="contact__checkBoxChecked">
-                            <IosAdd fontSize={60} color={'#ffffff'}/>
+                            <IosAdd fontSize="60px" color="#ffffff"/>
                         </div>)
                         : (<div className="contact__checkBoxInner"/>)
                 }

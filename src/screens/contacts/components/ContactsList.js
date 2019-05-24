@@ -30,7 +30,7 @@ class ContactsList extends React.PureComponent {
         }, []);
     };
 
-   static getRefs = (contacts) => {
+    static getRefs = (contacts) => {
         return Object.keys(contacts).reduce((acum,key) => {
             acum[key] = React.createRef();
             return acum;
@@ -47,8 +47,6 @@ class ContactsList extends React.PureComponent {
             blockRefs: {}
         };
     }
-
-
 
 
     goTo = (key) => {
@@ -101,7 +99,7 @@ class ContactsList extends React.PureComponent {
         const { contactsLoading } = this;
         return contactsLoading
             ? (<div className="contactsList__loader">
-                <IosRefresh fontSize="60px" color="#ccc" rotate={true}/>
+                <IosRefresh fontSize="60px" color="#cccccc" rotate={true}/>
             </div>)
             : null;
     };
